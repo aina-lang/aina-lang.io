@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- feuille du style personnalisé -->
+        <link rel="stylesheet" href="style.css">
+        <!-- feuille du style frameworks -->
+        <title>Application de resolution d'equation</title>
+    </head>
+    <body>
+        <!-- debut header -->
+        <header id="equation">
+            <nav>
+                <div class="logo">
+                    <h2>SIFAKA <span>APP</span></h2>
+                </div>
+                <div class="header-menu"class="center">
+                    <input type="button" value="second degre" id="seconddegre">
+                    <input type="button" value="equation lineaire" id="lineaire">
+                </div>
+                <div class="humberger" >
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                </div>
+                <a href="#contact"><i class="fa-solid fa-user"></i> <span>CONTACT</span></a>
+            </nav>
+        </header>
+        <!-- fin header -->
+        <!-- debut main -->
+        <main class=" width">
+            
+            <div class="menu_left"class="center">
+                <span class="close" style="position:absolute;right:30px;top:0;">X</span>
+                <input type="button" value="second degre" id="seconddegre">
+                <input type="button" value="equation lineaire" id="lineaire">
+                <a href="#contact" id="contact">CONTACT</a>
+            </div>
+            <div class="section">
+                <div class="panneau-publicitaire">
+                    <div class="pub center ">
+                        <div class="text">
+                            <h2>Apprendre c'est fonder un bel avenir</h2>
+                            <h2>Maths c'est facile</h2>
+                            <h2>Plus tu apprend ,plus tu sera geni</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="containeur" > 
+                    <div class="second-degre-area">
+                        <form action="" class="form1">
+                            <h2>resolution d'equation second degre</h2>
+                            <h2>
+                                <span class="coeff">a</span>x<sup>2</sup>+
+                                <span class="coeff">b</span>x+
+                                <span class="coeff">c</span>
+                            </h2>
+                            <div id="resultat"  class="bd" style="margin:20px auto;display: flex;align-items: center;flex-direction: column;">
+                                <span class="x1" style="text-align:left;width:100%">x1 =?</span>
+                                <span class="x2"style="text-align:left;width:100%">x2 =?</span>
+                            </div>
+                            <input type="text" id="a" class="input"placeholder="a">
+                            <input type="text" id="b" class="input"placeholder="b">
+                            <input type="text" id="c" class="input"placeholder="c"><br>
+                            <span class="message" style="text-align:left;width:78%;display: block;color: red;margin: auto;"></span>
+                            <input type="button" value="resoudre" id="resoudre">
+                            <input type="reset" value="effacer tout" class="reset">
+                        </form>
+                    </div>
+                    <div class="equation-lineaire-area ">
+                      <form action="" class="form2 none ">
+                            <h2>resolution d'equation lineaire</h2>
+                            <h2>
+                                <span class="coeff">a</span>x+
+                                <span class="coeff">b</span>y+
+                                <span class="coeff">c</span>z <br>
+                                <span class="coeff">a</span>x+
+                                <span class="coeff">b</span>y+
+                                <span class="coeff">c</span>z <br>
+                                <span class="coeff">a</span>x+
+                                <span class="coeff">b</span>y+
+                                <span class="coeff">c</span>z
+                            </h2>
+                            <div id="resultat" class="resultat bd center"style="margin:20px auto;">
+                               <span class="x" style="text-align:left;width:100%">x =?</span>
+                               <span class="y" style="text-align:left;width:100%">y =?</span>
+                               <span class="z" style="text-align:left;width:100%">z =?</span>
+                            </div>
+                            <div class="matrice">
+                                <div class="A">
+                                    <input type="text"class="elmt" id="a1" placeholder="a">
+                                    <input type="text" class="elmt" id="b1" placeholder="b">
+                                    <input type="text" class="elmt" id="c1" placeholder="c"><br>
+                                    <input type="text"class="elmt"  id="a2" placeholder="a">
+                                    <input type="text" class="elmt" id="b2" placeholder="b">
+                                    <input type="text"class="elmt"  id="c2" placeholder="c"><br>
+                                    <input type="text"class="elmt"  id="a3" placeholder="a">
+                                    <input type="text"class="elmt"  id="b3" placeholder="b">
+                                    <input type="text" class="elmt" id="c3" placeholder="c">
+                                </div>
+                                <span class="equal">=</span>
+                                <div class="B">
+                                    <input type="text"class="elmt"  id="d" placeholder="d">
+                                    <input type="text"class="elmt"  id="e" placeholder="e">
+                                    <input type="text" class="elmt" id="f" placeholder="f">
+                                </div>
+                            </div>
+                            <span class="message" style="text-align:left;width:78%;display: block;color: red;margin: auto;"></span>
+                            <input type="button" value="resoudre" id="resoudre">
+                            <input type="reset" value="effacer tout"class="reset">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="about width center" >
+                <p style="text-align: center;color:rgb(54, 52, 52);font-size: 16px;">
+                    C'est un app web conçue pour resoudre des equations second degre
+                    et equations lineaire .Faite entierement avec html css et js.
+                    pour plus d'info veuillez nous contacter.
+                </p>
+            </div>
+        </main>
+        <!-- fin main -->
+        <!-- debut footer -->
+        <footer class="width" id="contact">
+            <div class="social-network">
+                <nav class="menu">
+                    <a href="#"><i class="fa-brands fa-facebook-square"></i></a>
+                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                    <a href="#"><i class="fa-solid fa-user"></i></a>
+                </nav>
+            </div>
+            <span>
+            &copy;2022 by Ay na
+            </span>
+        </footer>
+        <!-- fin footer -->
+
+        <!-- mon script -->
+        <script src="main.js"></script>
+    </body>
+</html>
